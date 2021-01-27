@@ -40,6 +40,3 @@ axios.get(`https://date.nager.at/api/v2/publicholidays/${year}/${getCode(myArgs[
     
     
 })
-.catch(function (error) {
-    console.log(`An error occured: ${error.response.status} - ${error.response.statusText}`);
-});
