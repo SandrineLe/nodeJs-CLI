@@ -26,17 +26,17 @@ if (myArgs[1]) {
 
 axios.get(`https://date.nager.at/api/v2/publicholidays/${year}/${getCode(myArgs[0])}`)
 .then(function (response) {
-    figlet(`↓`, (err, data) => {
-        if (err) {
-            console.log('Something went wrong...');
-            console.dir(err);
-            return;
-        }
-        console.log(data);
+    figlet(``, ()=> {
+        console.log;
+        
         response.data.forEach(holiday => {
-            console.log(`${chalk.cyan(holiday.date)} - ${holiday.name}`);
+            console.log(`${chalk.bgGrey(holiday.date)} - ${holiday.name}`);
         });
     });
     
     
 })
+.catch(function (error) {
+    console.log(`Error, please check your command line...
+    ${chalk.red('!!')} - command line must be : holidates <country> <year> `);
+});
