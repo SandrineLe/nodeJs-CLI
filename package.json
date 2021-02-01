@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/SandrineLe/nodeJs-CLI#readme",
   "dependencies": {
-    "@sylber/holidates-cli": "^1.0.1",
     "axios": "^0.21.1",
     "chalk": "^4.1.0",
     "country-list": "^2.2.0",
